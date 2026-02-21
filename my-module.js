@@ -1,2 +1,3 @@
-const myModule = require('./my-module.js');
-console.log(myModule.myFunction());
+exports.myFunction = function () {
+    return "Hello from myModule!";
+};

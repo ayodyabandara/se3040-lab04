@@ -14,8 +14,8 @@ fs.readFile('file.txt', 'utf8', (err, data) => {
 });
 //create a web server
 const http = require('http');
-http.createServer(function(req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
+http.createServer(function (req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
   res.write('Hello World!');
   res.end();
 }).listen(8080);
